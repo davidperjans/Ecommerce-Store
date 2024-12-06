@@ -1,0 +1,196 @@
+{
+  "Products": [
+    {
+      "Name": "Dator",
+      "Category": "Electronics",
+      "Price": 16000.00,
+      "ImagePath": "Images/computer.png"
+    },
+    {
+      "Name": "iPhone 13",
+      "Category": "Electronics",
+      "Price": 7799.99,
+      "ImagePath": "Images/iphone.png"
+    },
+    {
+      "Name": "JBL Högtalare",
+      "Category": "Electronics",
+      "Price": 2299.99,
+      "ImagePath": "Images/speaker.png"
+    },
+    {
+      "Name": "Airpods Max",
+      "Category": "Electronics",
+      "Price": 3500.00,
+      "ImagePath": "Images/headphones.png"
+    },
+    {
+      "Name": "Apple watch",
+      "Category": "Electronics",
+      "Price": 1249.99,
+      "ImagePath": "Images/smartwatch.png"
+    },
+    {
+      "Name": "Smart TV",
+      "Category": "Electronics",
+      "Price": 9999.99,
+      "ImagePath": "Images/tv.png"
+    },
+    {
+      "Name": "Playstation 5",
+      "Category": "Electronics",
+      "Price": 4999.99,
+      "ImagePath": "Images/playstation.png"
+    },
+    {
+      "Name": "Skrivare",
+      "Category": "Electronics",
+      "Price": 1499.99,
+      "ImagePath": "Images/printer.png"
+    },
+    {
+      "Name": "Gucci tröja",
+      "Category": "Clothes",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "2",
+      "Category": "Clothes",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "3",
+      "Category": "Clothes",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "4",
+      "Category": "Clothes",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "5",
+      "Category": "Clothes",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "6",
+      "Category": "Clothes",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "7",
+      "Category": "Clothes",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "8",
+      "Category": "Clothes",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "1",
+      "Category": "Homedecor",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "2",
+      "Category": "Homedecor",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "3",
+      "Category": "Homedecor",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "4",
+      "Category": "Homedecor",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "5",
+      "Category": "Homedecor",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "6",
+      "Category": "Homedecor",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "7",
+      "Category": "Homedecor",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "8",
+      "Category": "Homedecor",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "1",
+      "Category": "Jewelry",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "2",
+      "Category": "Jewelry",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "3",
+      "Category": "Jewelry",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "4",
+      "Category": "Jewelry",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "5",
+      "Category": "Jewelry",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "6",
+      "Category": "Jewelry",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "7",
+      "Category": "Jewelry",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    },
+    {
+      "Name": "8",
+      "Category": "Jewelry",
+      "Price": 8990.00,
+      "ImagePath": "Images/guccishirt.png"
+    }
+  ]
+}
