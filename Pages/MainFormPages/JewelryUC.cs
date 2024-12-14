@@ -13,12 +13,17 @@ using Webshop.Classes;
 
 namespace Webshop.Pages
 {
-    public partial class ElectronicsUC : UserControl
+    public partial class JewelryUC : UserControl
     {
-        public ElectronicsUC()
+        private Cart _cart;
+        public JewelryUC()
         {
             InitializeComponent();
-            
+        }
+
+        public void InitializeData(Cart cart)
+        {
+            this._cart = cart;
             if (!DesignMode)
             {
                 LoadProducts();
@@ -42,7 +47,7 @@ namespace Webshop.Pages
                 var products = JSONHelper.LoadProductsFromJson(jsonPath);
 
                 //Filtrera produkter för elektronik kategorin
-                var electronicsProducts = products.Where(product => product.Category == "Electronics");
+                var electronicsProducts = products.Where(product => product.Category == "Jewelry");
 
 
 
@@ -66,7 +71,7 @@ namespace Webshop.Pages
                 // Lägg till produkter
                 foreach (var product in electronicsProducts)
                 {
-                    var itemCard = new ItemCard
+                    var itemCard = new ItemCard(_cart)
                     {
                         Width = 164,
                         Height = 221

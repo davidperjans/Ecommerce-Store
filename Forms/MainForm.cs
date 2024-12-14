@@ -7,136 +7,88 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Webshop.Cards;
+using Webshop.Classes;
+using Webshop.Pages;
 
 namespace Webshop.Forms
 {
     public partial class MainForm : Form
     {
+        private Cart _cart;
         public MainForm()
         {
             InitializeComponent();
+            _cart = new Cart();
         }
 
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            ShowPanelAndControl(homeUC1, pnlHome);
 
-
-
-
-
-
-
-
+            electronicsUC1.InitializeData(_cart);
+            clothesUC1.InitializeData(_cart);
+            homedecorUC1.InitializeData(_cart);
+            jewelryUC1.InitializeData(_cart);
+            cartUC1.InitializeData(_cart);
+        }
 
         /*                      NAV-Bar                     */
+        private void ShowPanelAndControl(UserControl controlToShow, Panel activePanel)
+        {
+            // Göm alla UserControls
+            var userControls = new List<UserControl> { cartUC1, jewelryUC1, clothesUC1, electronicsUC1, homedecorUC1 };
+            foreach (var control in userControls)
+            {
+                control.Visible = false;
+            }
+
+            // Visa det önskade UserControl
+            controlToShow.Visible = true;
+            controlToShow.BringToFront();
+
+            // Återställ alla panelers bakgrund
+            var panels = new List<Panel> { pnlShowcart, pnlJewelry, pnlClothes, pnlHomedecor, pnlElectronics };
+            foreach (var panel in panels)
+            {
+                panel.BackColor = Color.LightSkyBlue;
+            }
+
+            // Markera den aktiva panelen
+            activePanel.BackColor = Color.White;
+            if (activePanel == pnlHome)
+            {
+                activePanel.BackColor = Color.LightSkyBlue;
+            }
+        }
         private void exitBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
         private void btnElectronics_Click(object sender, EventArgs e)
         {
-            homeUC1.Visible = false;
-            clothesUC1.Visible = false;
-            electronicsUC1.Visible = true;
-            homedecorUC1.Visible = false;
-            jewelryUC1.Visible = false;
-            cartUC1.Visible = false;
-
-            pnlClothes.Visible = false;
-            pnlElectronics.Visible = true;
-            pnlHomedecor.Visible = false;
-            pnlJewelry.Visible = false;
-            pnlShowcart.Visible = false;
+            ShowPanelAndControl(electronicsUC1, pnlElectronics);
         }
         private void btnHomedecor_Click(object sender, EventArgs e)
         {
-            homeUC1.Visible = false;
-            clothesUC1.Visible = false;
-            electronicsUC1.Visible = false;
-            homedecorUC1.Visible = true;
-            jewelryUC1.Visible = false;
-            cartUC1.Visible = false;
-
-            pnlClothes.Visible = false;
-            pnlElectronics.Visible = false;
-            pnlHomedecor.Visible = true;
-            pnlJewelry.Visible = false;
-            pnlShowcart.Visible = false;
+            ShowPanelAndControl(homedecorUC1, pnlHomedecor);
         }
         private void btnClothes_Click(object sender, EventArgs e)
         {
-            homeUC1.Visible = false;
-            clothesUC1.Visible = true;
-            electronicsUC1.Visible = false;
-            homedecorUC1.Visible = false;
-            jewelryUC1.Visible = false;
-            cartUC1.Visible = false;
-
-            pnlClothes.Visible = true;
-            pnlElectronics.Visible = false;
-            pnlHomedecor.Visible = false;
-            pnlJewelry.Visible = false;
-            pnlShowcart.Visible = false;
+            ShowPanelAndControl(clothesUC1, pnlClothes);
         }
         private void btnJewelry_Click(object sender, EventArgs e)
         {
-            homeUC1.Visible = false;
-            clothesUC1.Visible = false;
-            electronicsUC1.Visible = false;
-            homedecorUC1.Visible = false;
-            jewelryUC1.Visible = true;
-            cartUC1.Visible = false;
-
-            pnlClothes.Visible = false;
-            pnlElectronics.Visible = false;
-            pnlHomedecor.Visible = false;
-            pnlJewelry.Visible = true;
-            pnlShowcart.Visible = false;
+            ShowPanelAndControl(jewelryUC1, pnlJewelry);
         }
         private void btnLogo_Click(object sender, EventArgs e)
         {
-            homeUC1.Visible = true;
-            clothesUC1.Visible = false;
-            electronicsUC1.Visible = false;
-            homedecorUC1.Visible = false;
-            jewelryUC1.Visible = false;
-            cartUC1.Visible = false;
-
-            pnlClothes.Visible = false;
-            pnlElectronics.Visible = false;
-            pnlHomedecor.Visible = false;
-            pnlJewelry.Visible = false;
-            pnlShowcart.Visible = false;
-        }
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            homeUC1.Visible = true;
-            clothesUC1.Visible = false;
-            electronicsUC1.Visible = false;
-            homedecorUC1.Visible = false;
-            jewelryUC1.Visible = false;
-            cartUC1.Visible = false;
-
-            pnlClothes.Visible = false;
-            pnlElectronics.Visible = false;
-            pnlHomedecor.Visible = false;
-            pnlJewelry.Visible = false;
-            pnlShowcart.Visible = false;
-        }
+            ShowPanelAndControl(homeUC1, pnlHome);
+        }     
         private void btnShowcart_Click(object sender, EventArgs e)
         {
-            homeUC1.Visible = false;
-            clothesUC1.Visible = false;
-            electronicsUC1.Visible = false;
-            homedecorUC1.Visible = false;
-            jewelryUC1.Visible = false;
-            cartUC1.Visible = true;
-
-            pnlClothes.Visible = false;
-            pnlElectronics.Visible = false;
-            pnlHomedecor.Visible = false;
-            pnlJewelry.Visible = false;
-            pnlShowcart.Visible = true;
+            ShowPanelAndControl(cartUC1, pnlShowcart);
         }
-
         /*                                                  */
     }
 }

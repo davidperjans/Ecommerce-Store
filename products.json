@@ -55,58 +55,58 @@
       "ImagePath": "Images/guccishirt.png"
     },
     {
-      "Name": "2",
+      "Name": "Gucci Byxor",
       "Category": "Clothes",
       "Price": 8990.00,
-      "ImagePath": "Images/guccishirt.png"
+      "ImagePath": "Images/guccipants.png"
     },
     {
-      "Name": "3",
+      "Name": "Huvtröja",
       "Category": "Clothes",
       "Price": 8990.00,
-      "ImagePath": "Images/guccishirt.png"
+      "ImagePath": "Images/sweatshirt.png"
     },
     {
-      "Name": "4",
+      "Name": "Jeans",
       "Category": "Clothes",
       "Price": 8990.00,
-      "ImagePath": "Images/guccishirt.png"
+      "ImagePath": "Images/jeans.png"
     },
     {
-      "Name": "5",
+      "Name": "Jeans jacka",
       "Category": "Clothes",
       "Price": 8990.00,
-      "ImagePath": "Images/guccishirt.png"
+      "ImagePath": "Images/jeansjacket.png"
     },
     {
-      "Name": "6",
+      "Name": "Chinos",
       "Category": "Clothes",
       "Price": 8990.00,
-      "ImagePath": "Images/guccishirt.png"
+      "ImagePath": "Images/chinos.png"
     },
     {
-      "Name": "7",
+      "Name": "Vit skjorta",
       "Category": "Clothes",
       "Price": 8990.00,
-      "ImagePath": "Images/guccishirt.png"
+      "ImagePath": "Images/shirt.png"
     },
     {
-      "Name": "8",
+      "Name": "Blå kavaj",
       "Category": "Clothes",
       "Price": 8990.00,
-      "ImagePath": "Images/guccishirt.png"
+      "ImagePath": "Images/kavaj.png"
     },
     {
-      "Name": "1",
+      "Name": "Gul soffa",
       "Category": "Homedecor",
       "Price": 8990.00,
-      "ImagePath": "Images/guccishirt.png"
+      "ImagePath": "Images/couch.png"
     },
     {
-      "Name": "2",
+      "Name": "Porsche tavla",
       "Category": "Homedecor",
       "Price": 8990.00,
-      "ImagePath": "Images/guccishirt.png"
+      "ImagePath": "Images/tavla.jpg"
     },
     {
       "Name": "3",

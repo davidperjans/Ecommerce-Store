@@ -49,81 +49,110 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cards\CartItemCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cards\CartItemCard.Designer.cs">
+      <DependentUpon>CartItemCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cards\ItemCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Cards\ItemCard.Designer.cs">
       <DependentUpon>ItemCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Cart.cs" />
+    <Compile Include="Classes\CartItem.cs" />
     <Compile Include="Classes\JSONHelper.cs" />
     <Compile Include="Classes\Product.cs" />
     <Compile Include="Classes\ProductList.cs" />
+    <Compile Include="Forms\CreditCardPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CreditCardPaymentForm.Designer.cs">
+      <DependentUpon>CreditCardPaymentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\CartUC.cs">
+    <Compile Include="Forms\PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainFormPages\CartUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Pages\CartUC.Designer.cs">
+    <Compile Include="Pages\MainFormPages\CartUC.Designer.cs">
       <DependentUpon>CartUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ClothesUC.cs">
+    <Compile Include="Pages\MainFormPages\ClothesUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Pages\ClothesUC.Designer.cs">
+    <Compile Include="Pages\MainFormPages\ClothesUC.Designer.cs">
       <DependentUpon>ClothesUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ElectronicsUC.cs">
+    <Compile Include="Pages\MainFormPages\ElectronicsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Pages\ElectronicsUC.Designer.cs">
+    <Compile Include="Pages\MainFormPages\ElectronicsUC.Designer.cs">
       <DependentUpon>ElectronicsUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\HomedecorUC.cs">
+    <Compile Include="Pages\MainFormPages\HomedecorUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Pages\HomedecorUC.Designer.cs">
+    <Compile Include="Pages\MainFormPages\HomedecorUC.Designer.cs">
       <DependentUpon>HomedecorUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\HomeUC.cs">
+    <Compile Include="Pages\MainFormPages\HomeUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Pages\HomeUC.Designer.cs">
+    <Compile Include="Pages\MainFormPages\HomeUC.Designer.cs">
       <DependentUpon>HomeUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\JewelryUC.cs">
+    <Compile Include="Pages\MainFormPages\JewelryUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Pages\JewelryUC.Designer.cs">
+    <Compile Include="Pages\MainFormPages\JewelryUC.Designer.cs">
       <DependentUpon>JewelryUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cards\CartItemCard.resx">
+      <DependentUpon>CartItemCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cards\ItemCard.resx">
       <DependentUpon>ItemCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreditCardPaymentForm.resx">
+      <DependentUpon>CreditCardPaymentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\CartUC.resx">
+    <EmbeddedResource Include="Forms\PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MainFormPages\CartUC.resx">
       <DependentUpon>CartUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\ClothesUC.resx">
+    <EmbeddedResource Include="Pages\MainFormPages\ClothesUC.resx">
       <DependentUpon>ClothesUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\ElectronicsUC.resx">
+    <EmbeddedResource Include="Pages\MainFormPages\ElectronicsUC.resx">
       <DependentUpon>ElectronicsUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\HomedecorUC.resx">
+    <EmbeddedResource Include="Pages\MainFormPages\HomedecorUC.resx">
       <DependentUpon>HomedecorUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\HomeUC.resx">
+    <EmbeddedResource Include="Pages\MainFormPages\HomeUC.resx">
       <DependentUpon>HomeUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\JewelryUC.resx">
+    <EmbeddedResource Include="Pages\MainFormPages\JewelryUC.resx">
       <DependentUpon>JewelryUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -153,7 +182,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\chinos.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\computer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\couch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\guccipants.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\guccishirt.png">
@@ -181,10 +219,22 @@
     <Content Include="Images\iphone.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\jeans.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\jeansjacket.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\kavaj.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\playstation.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\printer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\shirt.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\smartwatch.png">
@@ -193,12 +243,19 @@
     <Content Include="Images\speaker.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\sweatshirt.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\tavla.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\tv.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Database\" />
+    <Folder Include="Pages\PaymentFormPages\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

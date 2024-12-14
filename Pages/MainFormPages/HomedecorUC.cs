@@ -15,10 +15,18 @@ namespace Webshop.Pages
 {
     public partial class HomedecorUC : UserControl
     {
+        private Cart _cart;
         public HomedecorUC()
         {
             InitializeComponent();
 
+            
+
+        }
+
+        public void InitializeData(Cart cart)
+        {
+            this._cart = cart;
             if (!DesignMode)
             {
                 LoadProducts();
@@ -66,7 +74,7 @@ namespace Webshop.Pages
                 // Lägg till produkter
                 foreach (var product in electronicsProducts)
                 {
-                    var itemCard = new ItemCard
+                    var itemCard = new ItemCard(_cart)
                     {
                         Width = 164,
                         Height = 221

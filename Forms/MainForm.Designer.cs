@@ -44,12 +44,13 @@
             this.btnElectronics = new System.Windows.Forms.Button();
             this.btnLogo = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.homeUC1 = new Webshop.Pages.HomeUC();
             this.jewelryUC1 = new Webshop.Pages.JewelryUC();
             this.cartUC1 = new Webshop.Pages.CartUC();
             this.clothesUC1 = new Webshop.Pages.ClothesUC();
             this.electronicsUC1 = new Webshop.Pages.ElectronicsUC();
             this.homedecorUC1 = new Webshop.Pages.HomedecorUC();
-            this.homeUC1 = new Webshop.Pages.HomeUC();
+            this.pnlHome = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -82,6 +83,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel2.Controls.Add(this.pnlHome);
             this.panel2.Controls.Add(this.pnlShowcart);
             this.panel2.Controls.Add(this.pnlJewelry);
             this.panel2.Controls.Add(this.pnlClothes);
@@ -252,6 +254,13 @@
             this.panel3.Size = new System.Drawing.Size(1072, 661);
             this.panel3.TabIndex = 2;
             // 
+            // homeUC1
+            // 
+            this.homeUC1.Location = new System.Drawing.Point(0, 0);
+            this.homeUC1.Name = "homeUC1";
+            this.homeUC1.Size = new System.Drawing.Size(1072, 661);
+            this.homeUC1.TabIndex = 5;
+            // 
             // jewelryUC1
             // 
             this.jewelryUC1.Location = new System.Drawing.Point(0, 0);
@@ -287,12 +296,12 @@
             this.homedecorUC1.Size = new System.Drawing.Size(1072, 661);
             this.homedecorUC1.TabIndex = 2;
             // 
-            // homeUC1
+            // pnlHome
             // 
-            this.homeUC1.Location = new System.Drawing.Point(0, 0);
-            this.homeUC1.Name = "homeUC1";
-            this.homeUC1.Size = new System.Drawing.Size(1072, 661);
-            this.homeUC1.TabIndex = 5;
+            this.pnlHome.Location = new System.Drawing.Point(217, 4);
+            this.pnlHome.Name = "pnlHome";
+            this.pnlHome.Size = new System.Drawing.Size(10, 21);
+            this.pnlHome.TabIndex = 3;
             // 
             // MainForm
             // 
@@ -339,5 +348,6 @@
         private Pages.HomedecorUC homedecorUC1;
         private Pages.JewelryUC jewelryUC1;
         private Pages.HomeUC homeUC1;
+        private System.Windows.Forms.Panel pnlHome;
     }
 }

@@ -15,13 +15,18 @@ namespace Webshop.Cards
 {
     public partial class ItemCard : UserControl
     {
-        public ItemCard()
+        private Cart _cart;
+        private Product _currentProduct;
+        public ItemCard(Cart cart)
         {
             InitializeComponent();
+            _cart = cart;
         }
 
         public void SetProduct(Product product)
         {
+            _currentProduct = product;
+
             lblItemName.Text = product.Name;
             lblItemPrice.Text = $"${product.Price}";
 
@@ -41,16 +46,18 @@ namespace Webshop.Cards
         private void btnAddItem_Click(object sender, EventArgs e)
         {
             var quantity = (int)nudItem.Value;
-            var name = lblItemName.Text;
-            var price = decimal.Parse(lblItemPrice.Text.Trim('$'));
 
-            if (quantity > 0)
+            if (_currentProduct != null)
             {
-                MessageBox.Show($"Lade till {quantity} x {name} i din kassa för ${quantity * price}");
-            }
-            else
-            {
-                MessageBox.Show("Vänligen ange en giltig kvantitet.");
+                if (quantity > 0)
+                {
+                    _cart.AddToCart(_currentProduct, quantity);
+                    MessageBox.Show($"Lade till {quantity} x {_currentProduct.Name} i din kassa för ${quantity * _currentProduct.Price}");
+                }
+                else
+                {
+                    MessageBox.Show("Vänligen ange en giltig kvantitet.");
+                }
             }
         }
     }
